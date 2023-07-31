@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  align-items: center;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px grey;
+}
+Header, Footer {
+  background-color: lawngreen;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 0px 15px grey;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+#root {
+  display:flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+Header h1{
+  font-size: 2rem;
+}
+Header svg {
+  font-size: 2rem;
+}
+Footer {
+  display: grid;
+  place-content: center;
+  padding: 0.75rem;
+}
+Nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: cadetblue;
+}
+.searchForm {
+  width: 80%;
+  padding: 1rem 0 0 0.75rem;
+}
+.searchForm input[type="text"] {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+  min-height: 48px;
+  width: 100%;
+}
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}  
+Nav ul {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  flex-wrap: nowrap;
+}
+Nav li {
+  padding: 1rem;
+}
+Nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+Nav ul
+{
+ text-align: right;
+}
+Nav li :hover, 
+Nav li :focus, 
+Nav li :hover a, 
+Nav li :focus a {
+  cursor: pointer;
+  background-color: #eee;
+  color: #333;
+  padding: 1rem;
+}
+.Home, .NewPost, .Postpage, .About, .Missing {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+.Post {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgrey;
+}
+.newPostForm textarea {
+  height: 300px;
+}
+
+.Postpage button{
+  height: 48px;
+  min-width: 48px;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  /* color: #fff; */
+  cursor: pointer
+}
+.NewPost, .Postpage, .About, .Missing {
+  margin-bottom: 1rem;
+}
+.StatusMsg {
+  margin-right: 2rem;
+}
+.deleteButton {
+  background-color: red;
+}
+.editButton {
+  background-color: #333;
+}
+@media only screen and (min-width: 992px){
+  .Header svg {
+    font-size: 3rem;
+  }
+}
